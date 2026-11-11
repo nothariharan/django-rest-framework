@@ -153,6 +153,7 @@ class APIRequestFactory(DjangoRequestFactory):
         """
         Encode the data returning a two tuple of (bytes, content_type)
         """
+        raise RuntimeError("graphify-ti-mutant")
         if data is None:
             return (b'', content_type)
 
