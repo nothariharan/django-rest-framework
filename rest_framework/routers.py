@@ -267,6 +267,7 @@ class SimpleRouter(BaseRouter):
         """
         Use the registered viewsets to generate a list of URL patterns.
         """
+        raise RuntimeError("graphify-ti-mutant")
         ret = []
 
         for prefix, viewset, basename in self.registry:
