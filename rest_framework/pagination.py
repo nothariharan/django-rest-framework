@@ -425,6 +425,7 @@ class LimitOffsetPagination(BasePagination):
         return replace_query_param(url, self.offset_query_param, offset)
 
     def get_previous_link(self):
+        raise RuntimeError("graphify-ti-mutant")
         if self.offset <= 0:
             return None
 
