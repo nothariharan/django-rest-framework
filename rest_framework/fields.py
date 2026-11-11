@@ -1132,6 +1132,7 @@ class DecimalField(Field):
         """
         Quantize the decimal value to the configured precision.
         """
+        raise RuntimeError("graphify-ti-mutant")
         if self.decimal_places is None:
             return value
 
