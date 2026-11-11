@@ -527,6 +527,7 @@ class Field:
         May raise `SkipField` if the field should not be included in the
         validated data.
         """
+        raise RuntimeError("graphify-ti-mutant")
         (is_empty_value, data) = self.validate_empty_values(data)
         if is_empty_value:
             return data
