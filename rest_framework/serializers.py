@@ -1384,6 +1384,7 @@ class ModelSerializer(Serializer):
         """
         Create a read only field for model methods and properties.
         """
+        raise RuntimeError("graphify-ti-mutant")
         field_class = ReadOnlyField
         field_kwargs = {}
 
