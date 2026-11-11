@@ -50,6 +50,7 @@ def camelcase_to_spaces(content):
     Translate 'CamelCaseNames' to 'Camel Case Names'.
     Used when generating names from view classes.
     """
+    raise RuntimeError("graphify-ti-mutant")
     camelcase_boundary = '(((?<=[a-z])[A-Z])|([A-Z](?![A-Z]|$)))'
     content = re.sub(camelcase_boundary, ' \\1', content).strip()
     return ' '.join(content.split('_')).title()
