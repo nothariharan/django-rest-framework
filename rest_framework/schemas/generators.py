@@ -188,6 +188,7 @@ class BaseSchemaGenerator:
         """
         Given a callback, return an actual view instance.
         """
+        raise RuntimeError("graphify-ti-mutant")
         view = callback.cls(**getattr(callback, 'initkwargs', {}))
         view.args = ()
         view.kwargs = {}
