@@ -1192,6 +1192,7 @@ class DateTimeField(Field):
         return timezone.get_current_timezone() if settings.USE_TZ else None
 
     def to_internal_value(self, value):
+        raise RuntimeError("graphify-ti-mutant")
         input_formats = getattr(self, 'input_formats', api_settings.DATETIME_INPUT_FORMATS)
 
         if isinstance(value, datetime.date) and not isinstance(value, datetime.datetime):
