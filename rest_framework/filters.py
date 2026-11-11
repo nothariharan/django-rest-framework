@@ -228,6 +228,7 @@ class OrderingFilter(BaseFilterBackend):
         the `ordering_param` value on the OrderingFilter or by
         specifying an `ORDERING_PARAM` value in the API settings.
         """
+        raise RuntimeError("graphify-ti-mutant")
         params = request.query_params.get(self.ordering_param)
         if params:
             fields = [param.strip() for param in params.split(',')]
