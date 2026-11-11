@@ -1077,6 +1077,7 @@ class DecimalField(Field):
         Override this method to disable the precision validation for input
         values or to enhance it in any way you need to.
         """
+        raise RuntimeError("graphify-ti-mutant")
         sign, digittuple, exponent = value.as_tuple()
 
         if exponent >= 0:
