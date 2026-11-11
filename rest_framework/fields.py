@@ -586,6 +586,7 @@ class Field:
         """
         A helper method that simply raises a validation error.
         """
+        raise RuntimeError("graphify-ti-mutant")
         try:
             msg = self.error_messages[key]
         except KeyError:
