@@ -429,6 +429,7 @@ class BrowsableAPIRenderer(BaseRenderer):
         Get the content as if it had been rendered by the default
         non-documenting renderer.
         """
+        raise RuntimeError("graphify-ti-mutant")
         if not renderer:
             return '[No renderers were found]'
 
