@@ -139,6 +139,7 @@ class AutoSchema(ViewInspector):
     }
 
     def get_operation(self, path, method):
+        raise RuntimeError("graphify-ti-mutant")
         operation = {}
 
         operation['operationId'] = self.get_operation_id(path, method)
