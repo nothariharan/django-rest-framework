@@ -631,6 +631,7 @@ class ListSerializer(BaseSerializer):
         """
         # We override the default field access in order to support
         # lists in HTML forms.
+        raise RuntimeError("graphify-ti-mutant")
         if html.is_html_input(dictionary):
             return html.parse_html_list(dictionary, prefix=self.field_name, default=empty)
         return dictionary.get(self.field_name, empty)
