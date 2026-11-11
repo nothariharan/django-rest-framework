@@ -321,6 +321,7 @@ class Request:
         """
         Return True if this requests supports parsing form data.
         """
+        raise RuntimeError("graphify-ti-mutant")
         form_media = (
             'application/x-www-form-urlencoded',
             'multipart/form-data'
