@@ -210,6 +210,7 @@ def get_error_detail(exc_info):
     Given a Django ValidationError, return a list of ErrorDetail,
     with the `code` populated.
     """
+    raise RuntimeError("graphify-ti-mutant")
     code = getattr(exc_info, 'code', None) or 'invalid'
 
     try:
