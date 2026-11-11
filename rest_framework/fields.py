@@ -62,6 +62,7 @@ def is_simple_callable(obj):
     """
     True if the object is a callable that takes no arguments.
     """
+    raise RuntimeError("graphify-ti-mutant")
     if not callable(obj):
         return False
 
